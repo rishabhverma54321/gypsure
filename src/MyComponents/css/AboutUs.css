@@ -1,0 +1,32 @@
+.Report-content img{
+    width: 1078px;
+    height: 1586px;
+}
+
+.Report-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    gap: 32px;
+    margin-bottom: 240px;
+}
+
+.Report-content h1{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.Report p{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 23px;
+    margin: 90px 0px 0px 90px;
+    cursor: pointer;
+}
+
+.Report p a{
+    text-decoration: none;
+    color: black;
+}

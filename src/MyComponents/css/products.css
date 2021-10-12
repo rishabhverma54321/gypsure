@@ -1,0 +1,288 @@
+.products-heading{
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    margin-top: 90px;
+}
+
+.products-heading h1{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    }
+    
+.products-heading p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    }
+
+.products-type{
+    text-align: center;
+    margin-top: 127px;
+    cursor: pointer;
+}
+
+.products-type a :active{
+    font-weight: bold;
+    font-size: 19px;                 
+    line-height: 23px;
+    text-decoration: underline black;
+}
+
+.products-type a:hover{
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    text-decoration: underline black;
+}
+
+
+.products-type span a{
+    text-decoration: none;
+    color: black;
+}
+
+.products-type a{
+    text-decoration: none;
+    margin: 45px;
+
+}
+
+.products-title{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 115px;
+}
+
+.products-title-right h1{ 
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.products-title-right p{ 
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 43px;
+    margin-bottom: 28px;
+
+}
+
+.products-title-right > p{ 
+   text-align: center !important;
+   margin-bottom:117px;
+   margin-top: 28px;
+
+}
+
+.products-tittle-right-subheading{
+    display: block;
+    width: 804px;
+    height: 258px;
+    margin-left: -40px;
+}
+
+.products-tittle-right-subheading1{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 43px;
+    max-width: 1500px;
+    margin-left: 75px;
+}
+.products-table-report{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.products-table-report h1{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.products-table-report p{
+    font-weight: normal;
+    font-size: 36px;
+    width: 1231px;
+}
+
+/* feature products start from here  */
+
+.products-feature{
+    width: 80%;
+    margin: auto;
+    margin-top: 125px;
+}
+
+.products-features{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 66px;
+}
+
+.products-feature-articles{
+    max-width: 584px;
+} 
+
+.products-feature-articles p{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+} 
+
+.products-feature-articles h2{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+} 
+
+.products-advantages{
+    margin-top: 125px !important;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 71px !important;
+}
+
+.products-advantages img{
+    width: 1265px;
+    height: 800px;
+}
+
+.products-advantages h1{
+   text-align: start;
+}
+
+.products-link a{
+    font-weight: 800;
+    line-height: 58px;
+    text-align: center;
+    color: #F25A27;
+    text-decoration: underline;
+}
+.products-link{
+    text-align: center;
+    margin-bottom: 71px;
+}
+
+.products-link h3 ,h2{
+    margin: 60px 0px 35px 0px;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+/* .products-type1{
+    display: none;
+} */
+
+/* table start form here   */
+.product-table{
+    width: 1026px;
+    margin: auto;
+    margin-top:158px !important ;
+}
+
+.product-table-heading{
+    height: 86px;
+    background-color: #F24005;
+    border-bottom: none;
+}
+.product-table-heading th{
+    color:  #F6F6F6;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom:20px ;
+}
+
+.product-table-body td{
+    font-size: 28px;
+    border: 4px solid #F24005;
+}
+
+/* product 3 starts from here  */
+
+.product-type3{
+    margin-top: 143px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-type3-left h1{
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.product-type3-left p{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 43px;
+    width: 646px;
+    height: 258px;
+    margin-top: 86px;
+}
+
+/* .product-type3-right{
+    border: none;
+} */
+
+/* products 2 features and benifits  */
+
+.product-type2-features-benifits{
+    display: flex;
+    justify-content: space-around;
+}
+.product-type2-features h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.product-type2-features img{
+    width: 169px;
+    height: 134px;
+    margin: 30px;
+}
+
+.product-type2-benifits img{
+    width: 169px;
+    height: 134px;
+    margin: 30px;
+}
+
+.product-type2-benifits h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+/* Products Applictions  */
+
+.product-type2-application{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.product-type2-application h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.product-type2-application img{ 
+    width: 863px;
+    height: 253px;
+}

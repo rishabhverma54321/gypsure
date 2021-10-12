@@ -1,0 +1,40 @@
+*{
+  background-color: #f3f4fa;
+  color: black;
+}
+.button-background-color{
+  background-color: #F24005 !important;
+  color: #EEEEEE !important;
+  border-radius: 30px !important;
+  padding: 3px 30px !important;
+  width: 183px;
+  height: 41px;
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.button-background-color:hover{
+   background-color:#f24005e0  !important;
+   color: white !important;
+}
+
+.navhover a{
+  font-weight: normal;
+  color: black !important;
+  font-size: 21px;
+  line-height: 23px
+}
+
+.navhover:hover{
+  text-decoration: underline;
+}
+
+.navbar{
+  height: 90px !important;
+}
+
+@media only screen and (max-width: 980px) {  
+
+  
+}
+

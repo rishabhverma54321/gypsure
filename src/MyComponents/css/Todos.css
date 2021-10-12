@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+.container-start {
+  height: 847px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f3f4fa;
+}
+
+.container-start-img {
+  position: relative;
+  width: 901px;
+  height: 847px;
+}
+
+.container-start-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  letter-spacing: 3px;
+  background-color: transparent;
+}
+
+.container-text {
+  font-family: "Ubuntu", sans-serif;
+  z-index: 1;
+  position: absolute;
+  top: 426px;
+  left: 60px;
+  color: black;
+  background-color: transparent;
+}
+
+.container-start-subtitle {
+  font-weight: 400;
+  font-size: 48px;
+  background-color: transparent;
+  margin-top: 100px;
+}
+
+.navdown-button {
+  position: absolute;
+  left: 50%;
+  top: 850px;
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: auto;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Making of Down arrow  */
+.down-scroll-down{
+  animation: scroll 1s alternate;
+    position: sticky;
+    top: 40px;
+}
+
+  i {
+  display: block;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  height: 15px;
+  width: 15px;
+  margin: 15px auto;
+  background-color: transparent;
+  /* animation: scroll 1s alternate ease infinite; */
+  z-index: 2;
+}
+
+.down-arrow {
+  transform: rotate(-45deg);
+}
+/* 
+@keyframes scroll {
+ from{ 
+   transform: translateY(-10px);
+  }
+   to
+   {
+     transform: translateY(2px);
+   }
+
+} */
+
+/* section main  */
+
+.container-main {
+  /* position: relative; */
+  height: 1072px;
+  background-color: rgba(248, 247, 247, 0.5);
+  z-index: 1;
+}
+
+.container-main h5{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.grading {
+  position: absolute;
+  top:-120px;
+  left:-110px;
+  width: 271px;
+  height: 271px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(242, 90, 39, 0.58) 0%,
+    rgba(242, 90, 39, 0) 100%
+  );
+}
+
+.grading-top{
+position: relative;
+/* border: 2px solid black; */
+height: 160px;
+width: 160px;
+object-fit: cover;
+overflow: hidden;
+background-color: transparent;
+}
+
+.container-main-text{
+  font-size: 48px;
+  font-weight: 900;
+  color: black;
+  margin-left: 110px;
+}
+
+.container-main-middle-text{
+  margin: 189px 253px 0px 110px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.065em;
+}
+
+.grading-bottom{
+  position: relative;
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.gradingBottom{
+  position: absolute;
+  bottom:-120px;
+  right:-110px;
+  width: 271px;
+  height: 271px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(242, 90, 39, 0.58) 0%,
+    rgba(242, 90, 39, 0) 100%
+  );
+}
+
+
+/* / Container middle starts from here   */
+
+/* animation in card  */
+.card{
+  position: relative;
+}
+
+.card-body:hover{
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+.container-middle{
+  height: 800px;
+  background-color: #f3f4fa;
+}
+
+.container-middle-title{
+font-size: 48px;
+font-weight: 900;
+text-align: left;
+margin-top: 180px;
+margin-left: 156px;
+}
+
+.container-middle-card{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 115px;
+}
+
+
+.container-middle-link{
+  font-size: 22px;
+  text-decoration: none;
+  border-bottom: 1px solid #F25A27;
+  width: 134px;
+  font-weight: 500;
+  height: 40px;
+}
+
+.right-arrow {
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-135deg);
+  display: inline-block;
+  border-bottom: 3px solid #F25A27;
+  border-left: 3px solid #F25A27;
+  height: 13px;
+  width: 13px;
+}
+
+
+/* last form template  */
+.container-last{
+  display: flex;
+  height: 855px;
+  background:#7A7A7A;
+  justify-content: space-around;
+}
+
+.container-last-left{
+  background-color: transparent;
+  position: relative;
+}
+
+.container-last-left h1{
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px; 
+  margin: 93px 0px 59px 0px;
+}
+
+.container-last-left p{
+  font-weight: bold;
+font-size: 36px;
+line-height: 43px;
+margin:auto;
+}
+
+.container-last-left img{
+  position:absolute;
+  width: 500px;
+  height: 500px;
+  top: 200px;
+  left: -72px;
+}
+
+
+.container-last-right p{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 95px 0px 90px 0px;
+}
+
+.container-last-right label{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.container-last-right button{
+  position: relative;
+  width: 189px;
+  height: 49px;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  border-radius: 8px;
+  background-color: #F24005 ;
+  border: none;
+  margin-top: 90px;
+  text-align: left;
+}
+
+.container-last-right button:hover{
+   background-color:#F25A27
+}
+
+.last-right-arrow{
+  position: absolute;
+  transform: rotate(-135deg);
+  display: inline-block;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
+  height: 15px;
+  width: 15px;
+  right: 50px;
+  bottom: 1px;
+  
+}
+
+.container-last-right input{
+   width: 379px;
+   border-bottom:1px solid white !important;
+   border-right: none;
+   border-top: none;
+   border-left: none;
+}
+
+.topLabel{
+  width: 61px;
+  height: 122px;
+  background: #F24005;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container-last-right {
+  display: flex;
+  gap: 130px;
+  margin-top: 0px;
+}
+
+input[type="Text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+.container-last-right button:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* Footer Setup  */
+
+.footer{
+  height: 363px;
+  background-color: #6F6F6F;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+/* To correct the icon link  */
+.footer i{
+  display: block;
+  border-bottom: none;
+  border-left: none;
+  color: #D0D0D0;
+  padding: 15px;
+}
+
+.footer-card1,
+.footer-card2,
+.footer-card3{    
+  width: 346px;
+  height: 290px;
+  background-color: transparent;
+
+}
+
+.footer-social-card{
+  width: 250px;
+}
+
+.footer-social-card div{
+   margin-top: -10px;
+   cursor: pointer;
+
+}
