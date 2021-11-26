@@ -1,6 +1,6 @@
 .Report-content img{
-    width: 1078px;
-    height: 1586px;
+    width: 950px;
+    height: 1000px;
 }
 
 .Report-content{
@@ -14,7 +14,7 @@
 
 .Report-content h1{
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 58px;
 }
 
@@ -26,7 +26,48 @@
     cursor: pointer;
 }
 
+.Report p:before{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 23px;
+    margin: 90px 0px 0px 90px;
+    cursor: pointer;
+}
+
+.Report p:hover{
+    text-decoration: underline;
+}
+
 .Report p a{
     text-decoration: none;
     color: black;
 }
+
+@media only screen and (max-width: 1000px) {  
+  
+    .Report-content img{
+        width: 100%;
+    }
+
+    .Report-content h1{
+        font-size: 24px !important;
+    }
+
+    .Report p a{
+        font-size: 18px;
+    }
+
+    .Report{
+        height: max-content;
+    }
+
+    .Report-content{
+        margin-top: 40px;
+        margin-bottom: 130px;
+    }
+
+    .Report p {
+        margin-top: 40px;
+        margin-left: 25px;
+    }
+   }

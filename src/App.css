@@ -1,3 +1,9 @@
+body{
+  -moz-transform: scale(0.8, 0.8); /* Moz-browsers */
+  zoom: 0.8; /* Other non-webkit browsers */
+  zoom: 80%; /* Webkit browsers */
+}
+
 *{
   background-color: #f3f4fa;
   color: black;
@@ -14,27 +20,68 @@
 }
 
 .button-background-color:hover{
-   background-color:#f24005e0  !important;
-   color: white !important;
+   background-color:transparent !important;
+   color: #F24005 !important;
+   transition: all 0.3s ease-in;
 }
 
-.navhover a{
+.navcolor a{
   font-weight: normal;
   color: black !important;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 23px
 }
 
-.navhover:hover{
-  text-decoration: underline;
+.navcolor{
+  position: relative;
+}
+
+.navcolor::after{
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  display: block;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: 0.5s
+}
+
+.navcolor:hover::after{
+  width: 100%;
+}
+
+.navhover{
+  border-bottom: 3px solid black;
+  margin-bottom: 2px;
 }
 
 .navbar{
   height: 90px !important;
 }
-
-@media only screen and (max-width: 980px) {  
-
+.nav-responsive{
+  display: none;
+}
+/* .nav-responsive-bar{
+  float: left;
   
+} */
+
+ @media only screen and (max-width: 1000px) {  
+
+.responsive-nav-bar{
+  justify-content: start !important;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
+.responsive-nav-bar button{
+  width: 40%;
+}
+
+.container-fluid{
+  background-color: transparent !important;
+}
+
+ }

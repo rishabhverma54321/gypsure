@@ -11,7 +11,7 @@ export const TodosAboutUS = () => {
         <h1 className="container-main-text">
           About <br /> Us
         </h1>
-        <div className="float-end me-5">
+        <div className="responsive-container-text float-end me-5">
           <h5 style={{ letterSpacing: "1px" }}>
             We Provide You The Best Imported White Powder And Gypsum Lumps
           </h5>
@@ -25,8 +25,8 @@ export const TodosAboutUS = () => {
           Bond-Plus Gypsum Boards and other Gypsum Products for construction
           industry.
           <div
-            className=""
-            style={{ letterSpacing: "1px", margin: "90px 0px 78px 0px" }}
+            className="responsive-container-main-middle-text"
+            style={{ letterSpacing: "1px" }}
           >
             Over the years we have been able to distinguish ourselves as a
             leading supplier by constantly defining and refining excellence in

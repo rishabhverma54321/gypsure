@@ -6,14 +6,14 @@ import imgtype1 from "../images/image gyppowder.svg";
 import imgadv from "../images/image adv.svg";
 export const Product1 = () => {
     return (
-        <div>
+        <div className="responsive-rapper">
             <div className="products-type1">
       <div >
         <div className="products-title">
-          <div>
+          <div className="responsive-img-product1">
             <img src={imgtype1} alt="" />
           </div>
-          <div className="products-title-right ">
+          <div className= " responsive-products-title-right products-title-right ">
             <h1>
               GYPSURE PLUS <br /> GYPSUM POWDER
             </h1>

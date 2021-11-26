@@ -11,15 +11,15 @@ import imgapplication from "../images/image application.svg";
 
 export const Product2 = () => {
     return (
-        <div>
+        <div className="responsive-rapper">
             <div className="products-type2">
      <div>
       <div className="products-title">
-          <div>
+          <div className="responsive-img-product2">
             <img src={imgtype2} alt="" />
           </div>
           <div className="products-title-right ">
-            <h1 style={{textAlign:'start', marginBottom:'50px'}}>
+            <h1 style={{fontWeight:"bold", textAlign:'start', marginBottom:'50px'}}>
             GYPSURE BOND <br /> PLUS
             </h1>
             <h3 style={{maxWidth:'680px',textAlign:'start'}}>

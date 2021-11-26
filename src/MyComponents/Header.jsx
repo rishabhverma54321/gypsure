@@ -1,38 +1,36 @@
 import React from 'react'
-import { Link , withRouter} from 'react-router-dom'
-
-const Header = ({history}) => {
-  console.log(history)
-  const getcolor = (curr) =>{
-     if(history.location.pathname===curr)
-     {
-       return ('underline black')
-     }
-  }
+import { NavLink , withRouter} from 'react-router-dom'
+ 
+const Header = () => {
         return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light  " style = {{height:"60px", backgroundColor:'transparent'}}>
+        <nav style={{position:"relative",zIndex:"2"}} class="navbar navbar-expand-lg navbar-light ">
   <div className="container-fluid">
-    <Link className="navbar-brand ms-5"  to="/">Logo</Link>
-    <div className="collapse navbar-collapse d-flex justify-content-end me-5">
+  <NavLink style={{fontWeight:"bolder"}} className="navbar-brand ms-5"  to="/">Logo</NavLink>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div  className="  collapse navbar-collapse" id="navbarSupportedContent">
+    <div style={{width:"100%"}} className=" responsive-nav-bar nav-responsive-bar d-flex justify-content-end">
       <ul className="navbar-nav mb-2 me-3 mb-lg-0">
-        <li className="nav-item navhover me-5">
-          <Link className="nav-link "  to="/" style={{textDecoration:getcolor('/')}}>Home</Link>
+      <li active ClassName='navhover' className="nav-item navcolor me-5">
+          <NavLink activeClassName = 'navhover' className="nav-link " exact  to="/" >Home</NavLink>
         </li>
-        <li className="nav-item  navhover me-5">
-          <Link className="nav-link" to="/about" style={{textDecoration:getcolor('/about')}}>About Us</Link>
+        <li className="nav-item navcolor me-5">
+          <NavLink activeClassName = 'navhover' className="nav-link" to="/about" >About Us</NavLink>
         </li>
-        <li className="nav-item  navhover me-5">
-          <Link className="nav-link" to="/products" style={{textDecoration:getcolor('/products')}}>Products</Link>
+        <li className="nav-item navcolor  me-5">
+          <NavLink activeClassName = 'navhover' className="nav-link" to="/products" >Products</NavLink>
         </li>
-        <li className="nav-item  navhover me-5">
-          <Link className="nav-link" to="/client" style={{textDecoration:getcolor('client')}}>Client</Link>
+        <li  className="nav-item navcolor me-5">
+          <NavLink activeClassName = 'navhover' className="nav-link" to="/client" >Client</NavLink>
         </li>
-        <li className="nav-item  navhover me-5">
-          <Link className="nav-link" to="/imggallary" style={{textDecoration:getcolor('/imggallary')}}>Gallary</Link>
-        </li>                                                           
+        <li  className="nav-item navcolor me-5">
+          <NavLink  activeClassName = 'navhover' className="nav-link" to="/imggallary" >Gallary</NavLink>
+        </li> 
       </ul>
       <button className="btn button-background-color" type="submit">Contact Us</button>
+      </div>
     </div>
   </div>
 </nav>

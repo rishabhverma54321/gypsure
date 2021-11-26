@@ -1,5 +1,6 @@
 import React from 'react'
 import img2 from './images/g10.png'
+import "./css/Todos.css";
 
 export const TodosLast = () => {
     return (
@@ -8,7 +9,7 @@ export const TodosLast = () => {
                 <div className='container-last-left bg-transparent'>
                     <h1 className='bg-transparent text-light'>Query!</h1>
                     <p className="bg-transparent text-light">We Are Happy To Help</p>
-                    <img  className='bg-transparent' src={img2} alt="" />
+                    <img  className= ' responsive-todo-last-img  bg-transparent' src={img2} alt="" />
                 </div>
                 <div className='container-last-right  bg-transparent'>
                 <div className="bg-transparent" style={{height:'fitContent'}}>

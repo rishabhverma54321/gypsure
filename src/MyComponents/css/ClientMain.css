@@ -12,7 +12,7 @@
 
 .clientMain-heading h1{
     font-weight: 900;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 58px;
 }
 
@@ -50,3 +50,43 @@
     text-align: center;
     margin-top: 120px;
 }
+
+@media only screen and (max-width: 1000px) {  
+   
+    .clientMain-heading h1{
+        font-size: 35px;
+    }
+
+    .clientMain-heading p{
+        font-size: 18px;
+        width: 100%;
+        height: 34px;
+    }
+
+    .clientMain-heading{
+        display: block;
+        margin-top: 20px;
+        height: 200px;
+    }
+    
+    .clientCard{
+        width:166px;
+        height: 108px;
+        margin: 10px;
+    }
+
+    .clientCard img{
+        width: 100%;
+    }
+
+    .clientMain{
+        height: max-content;
+    }
+
+    .clientMain-last-text{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+   }

@@ -3,6 +3,8 @@ import imggallary1 from '../images/imggallary1.svg'
 import imggallary2 from '../images/imggallary2.svg'
 import imggallary3 from '../images/imggallary3.svg'
 import imggallary4 from '../images/imggallary4.svg'
+import '../css/Todos.css'
+
 
 export const Gallary = () => {
     const gallaryheading = {
@@ -19,7 +21,7 @@ export const Gallary = () => {
     return (
         <div>
             <div className='gallary m-auto' style={{width:'80%'}}>
-                <h1 style={gallaryheading}>GALLERY</h1>
+                <h1 className= "responsive-gallery-title" style={gallaryheading}>GALLERY</h1>
                 <div className='gallary-images d-flex justify-content-around align-items-center flex-wrap '>
                       <img src={imggallary1} style={imggallary} alt="" />
                       <img src={imggallary2} style={imggallary} alt="" />

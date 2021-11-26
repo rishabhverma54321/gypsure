@@ -1,8 +1,14 @@
 import React from "react";
 import "./css/Todos.css";
-import { Link } from "react-router-dom";
-export const TodosMain = () => {
+import { Link, withRouter } from "react-router-dom";
+const TodosMain = () => {
+
+    const scrolldown = () => {
+        document.getElementById('last').scrollIntoView();
+    }
+
      const cardshift1 = () =>{
+
            document.getElementsByClassName('cardStrach')[0].style.display='block'
      } 
          const cardshift2 = () =>{
@@ -32,13 +38,13 @@ const cardend3 = () =>{
                 <div className="container-middle-card" >
                     <div class="card" style={{ width: '333px', height: '330px', border: 'none' }}>
                         <h1 style={{ textAlign: 'center', fontWeight: '800', fontSize: "55px" }}>01</h1>
-                        <div class="card-body d-flex justify-content-around flex-column bg-white" onMouseOver={cardshift1} onMouseOut={cardend1}>
+                        <div class=" card-body flex-wrap d-flex justify-content-around flex-column bg-white" onMouseOver={cardshift1} onMouseOut={cardend1}>
                             <p class="card-text fw-bold bg-white fs-5">
                                 Tell Us Your Requirement through Contact Us Form
                             </p>
                             <div className="cardStrach" style={{backgroundColor:'transparent', display:'none'}}>
                             <div className=' container-middle-link bg-white'>
-                            <Link  to='/' class="card-link bg-white text-decoration-none" style={{color:"#F25A27"}}> 
+                            <Link  to='/last' onClick={scrolldown} class="card-link bg-white text-decoration-none" style={{color:"#F25A27"}}> 
                                 Contact Us <i className='right-arrow'/>
                             </Link>
                             </div>
@@ -47,13 +53,13 @@ const cardend3 = () =>{
                     </div>
                     <div class="card" style={{ width: '333px', height: '330px', border: 'none' }}>
                         <h1 style={{ textAlign: 'center', fontWeight: '800', fontSize: "55px" }}>02</h1>
-                        <div class="card-body d-flex justify-content-around flex-column bg-white" onMouseOver={cardshift2} onMouseOut={cardend2}>
+                        <div class="card-body flex-wrap d-flex justify-content-around flex-column bg-white" onMouseOver={cardshift2} onMouseOut={cardend2}>
                             <p class="card-text bg-white fw-bold fs-5">
                             We Will Contact You with Quotation For The Inquired Product
                             </p>
                             <div className="cardStrach" style={{backgroundColor:'transparent', display:'none'}}>
                             <div className=' container-middle-link bg-white'>
-                            <Link to='/' class="card-link bg-white text-decoration-none" style={{color:"#F25A27"}}> 
+                            <Link to='/last' onClick={scrolldown} class="card-link bg-white text-decoration-none" style={{color:"#F25A27"}}> 
                                 Contact Us <i className='right-arrow'/>
                             </Link>
                             </div>
@@ -62,14 +68,14 @@ const cardend3 = () =>{
                     </div>
                     <div class="card" style={{ width: '333px', height: '330px', border: 'none' }}>
                         <h1 style={{ textAlign: 'center', fontWeight: '800', fontSize: "55px" }}>03</h1>
-                        <div class="card-body d-flex justify-content-around flex-column bg-white " onMouseOver={cardshift3} onMouseOut={cardend3}>
+                        <div class="card-body flex-wrap d-flex justify-content-around flex-column bg-white " onMouseOver={cardshift3} onMouseOut={cardend3}>
                             <p class="card-text bg-white fw-bold fs-5">
                                 Once Everything Is Finalised We Deliver Your Material
                                 To You
                             </p>
                              <div className="cardStrach" style={{backgroundColor:'transparent', display:'none'}}>
                             <div className=' container-middle-link bg-white'>
-                            <Link to='/' class="card-link bg-white text-decoration-none" style={{color:"#F25A27"}}> 
+                            <Link to='/last' onClick={scrolldown} class="card-link bg-white text-decoration-none" style={{color:"#F25A27"}}> 
                                 Contact Us <i className='right-arrow'/>
                             </Link>
                             </div>
@@ -81,3 +87,5 @@ const cardend3 = () =>{
         </>
     );
 };
+
+export default withRouter(TodosMain)

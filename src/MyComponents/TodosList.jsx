@@ -1,7 +1,7 @@
 import React from 'react'
 import Todos from './Todos'
 import { TodosAboutUS } from './TodosAboutUS'
-import {TodosMain} from './TodosMain'
+import TodosMain from './TodosMain'
 import {TodosLast} from './TodosLast'
 import {
     BrowserRouter as Router,
@@ -12,9 +12,9 @@ export const TodosList = () => {
     return (
         <Router>
         <>
-           <Todos/>
+           <Todos/> 
            <TodosAboutUS/>
-           <TodosMain/>
+           <TodosMain/> 
            <Switch>
            <TodosLast/>
            <Route path="/last">

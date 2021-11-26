@@ -11,6 +11,8 @@
   position: relative;
   width: 901px;
   height: 847px;
+
+  object-fit: cover;
 }
 
 .container-start-title {
@@ -140,7 +142,7 @@ background-color: transparent;
 }
 
 .grading-bottom{
-  position: relative;
+  /* position: relative; */
   height: 160px;
   width: 160px;
   object-fit: cover;
@@ -149,7 +151,7 @@ background-color: transparent;
 }
 
 .gradingBottom{
-  position: absolute;
+  /* position: absolute; */
   bottom:-120px;
   right:-110px;
   width: 271px;
@@ -172,11 +174,13 @@ background-color: transparent;
 .card-body:hover{
   margin-top: -30px;
   cursor: pointer;
+  transition: all 0.7s ease;
 }
 
 .container-middle{
-  height: 800px;
   background-color: #f3f4fa;
+  height: 768px;
+
 }
 
 .container-middle-title{
@@ -191,6 +195,7 @@ margin-left: 156px;
   display: flex;
   justify-content: space-evenly;
   margin-top: 115px;
+  flex-wrap: wrap;
 }
 
 
@@ -202,6 +207,7 @@ margin-left: 156px;
   font-weight: 500;
   height: 40px;
 }
+
 
 .right-arrow {
   position: absolute;
@@ -337,7 +343,7 @@ input[type="email"]:focus,
   align-items: center;
   text-align: center;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
 }
 
@@ -368,3 +374,152 @@ input[type="email"]:focus,
    cursor: pointer;
 
 }
+
+.responsive-container-main-middle-text h5{
+  margin: "90px 0px 78px 0px"
+}
+
+.fit-content{
+  width:fit-content !important;
+}
+
+@media only screen and (max-width: 1000px) {  
+  .container-start-img{
+    width:100%;
+    /* width: 575px; */
+    height: 687px;
+    /* left: 15%; */
+  }
+
+.container-start-subtitle{
+   font-size: 26px;
+}
+.container-start-title{
+  font-size: 48px;
+  width: 100px;
+}
+
+.container-start{
+  height: 687px;
+  /* width: 100%; */
+}
+
+.container-main{
+  height: max-content;  
+  /* width: 100%; */
+}
+.grading{
+  width: 271px;
+  height: 271px;
+}
+
+.container-main-text{
+  width: 119px;
+  height: 86px;
+  font-size: 36px;
+}
+
+.responsive-container-text h5{
+  font-size: 20px;
+  margin-left: 8%;
+  margin-top: 20px ;
+  margin-bottom: 40px ;
+
+}
+
+.container-main-middle-text{
+  font-size: 20px;
+  /* width: 100%; */
+  margin: 140px 4% 0px 4%;
+}
+
+.container-middle-title{
+  font-size: 36px;
+}
+
+.container-middle{
+  height: max-content;
+  margin-bottom: 40px
+}
+
+.container-middle-card{
+  margin-top:48px
+}
+
+.bg-transparent{
+  width: max-content;
+  margin: auto;
+}
+
+.topLabel{
+  display: none;
+}
+
+.responsive-todo-last-img{
+  display: none;
+}
+
+.container-last-left p{
+  display: none;
+}
+
+.container-last-left h1{
+  font-size:36px;
+}
+
+.container-last{
+  display: block;
+}
+
+.container-last-left p{
+  display: none;
+}
+
+.container-last-right p{
+  margin: 80px 0px 70px 0px;
+}
+
+.container-last-left h1{
+  padding-top: 77px;
+  margin-bottom: -10px;
+}
+
+.footer{
+  width: 100%;
+  flex-wrap: wrap;
+  height: max-content;
+}
+.footer-card1{
+  margin-top: 30px;
+}
+
+.navdown-button{
+  display: none;
+}
+
+.responsive-footer-icon{
+  width: 35.46px;
+  height: 35.46px;
+}
+
+.responsive-footer-title{
+  font-size: 18px;
+}
+
+.responsive-footer-subtitle{
+  font-size: 14px !important;
+}
+
+.footer-card1, .footer-card2, .footer-card3{
+  height: 218px;
+}
+
+/* Gallary component starts from here  */
+
+.responsive-gallery-title{
+  font-size: 25px !important;
+  margin-top: 20px !important;
+  margin-bottom: 60px !important;
+}
+
+ }
