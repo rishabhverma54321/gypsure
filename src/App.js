@@ -8,6 +8,7 @@ import {ClientMain} from './MyComponents/Client/ClientMain'
 import Products from './MyComponents/Product/Products'
 import AboutUS from './MyComponents/AboutUs/AboutUs'
 import { Gallary } from './MyComponents/Gallary/Gallary';
+import { TodosLast } from './MyComponents/TodosLast';
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/client">
           <ClientMain/>
+          </Route>
+          <Route path="/last">
+            <TodosLast/>
           </Route>
           <Route  path="/">
           <TodosList/>

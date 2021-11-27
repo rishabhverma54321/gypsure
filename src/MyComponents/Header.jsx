@@ -1,7 +1,9 @@
 import React from 'react'
-import { NavLink , withRouter} from 'react-router-dom'
+
+import { NavLink , withRouter, useHistory} from 'react-router-dom'
  
-const Header = () => {
+const Header =  () => {
+
         return (
         <>
         <nav style={{position:"relative",zIndex:"2"}} class="navbar navbar-expand-lg navbar-light ">
@@ -29,7 +31,7 @@ const Header = () => {
           <NavLink  activeClassName = 'navhover' className="nav-link" to="/imggallary" >Gallary</NavLink>
         </li> 
       </ul>
-      <button className="btn button-background-color" type="submit">Contact Us</button>
+      <button className="btn button-background-color" type="submit"><NavLink style={{backgroundColor:"transparent",textDecoration:"none",color:"white"}} to="/last">Contact Us</NavLink></button>
       </div>
     </div>
   </div>

@@ -21,8 +21,12 @@ body{
 
 .button-background-color:hover{
    background-color:transparent !important;
-   color: #F24005 !important;
+   /* color: #F24005 !important; */
    transition: all 0.3s ease-in;
+}
+
+.button-background-color a:hover{
+  color: #F24005 !important;
 }
 
 .navcolor a{

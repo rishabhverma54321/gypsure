@@ -9,20 +9,15 @@ import {
     Route,
   } from "react-router-dom";
 export const TodosList = () => {
+  
     return (
-        <Router>
+
         <>
            <Todos/> 
            <TodosAboutUS/>
            <TodosMain/> 
-           <Switch>
            <TodosLast/>
-           <Route path="/last">
-            <TodosLast/>
-          </Route>
-           </Switch>
         </>
-      </Router>
     )
 }
 
